@@ -297,14 +297,25 @@ img {
 }
 
 .campo__label {
-    flex: 0 0 9rem;
+    display: flex;
     text-align: right;
 }
 
 .campo__field {
-    flex: 1;
+    width: 70%;
     border: 1px solid var(--gris);
 }
+
+@media(min-width:768px) {
+    .campo__label {
+        flex: 0 0 9rem;
+    }
+
+    .campo__field {
+        flex: 1;
+    }
+}
+
 
 .campo__label--textarea {
     height: 20rem;
